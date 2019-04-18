@@ -8,6 +8,8 @@
 
 namespace App\Controller;
 
+use GuzzleHttp\Client;
+
 class HomeController extends AbstractController
 {
 
@@ -21,6 +23,19 @@ class HomeController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Home/index.html.twig');
+
+        $client = new Client(
+            [
+                'base_uri' => 'http://easteregg.wildcodeschool.fr/api/'
+            ]
+        );
+
+        $response = $client->request('GET', 'characters/random');
+        $body = $response->getBody();
+        $json = $body->getContents();
+        $characters = json_decode($json, true);
+
+
+        return $this->twig->render('Home/index.html.twig', ['characters' => $characters]);
     }
 }
