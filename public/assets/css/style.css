@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     color:black;
     background-color:white;
@@ -92,3 +93,24 @@ h1{
        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
        animation: shadow-pulse 1s infinite;
    }
+=======
+/*navbar*/
+.nav {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item{
+    margin-top: 25px;
+}
+.navbar
+{
+    background-image: url("https://www.demotivateur.fr/images-buzz/cover/4595053658ef81b4c7bcb_Sans-titre-2.jpg");
+    opacity:0.8;
+}
+.nav-link{
+    color: fuchsia;
+    font-size: 25px;
+    margin-left: 150px;
+}
+/*end navbar*/
+>>>>>>> a0eaf5b956c4783527d30b403167916e19427bda
