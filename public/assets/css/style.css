@@ -8,12 +8,12 @@
 }
 .navbar
 {
-    background-image: url("https://www.demotivateur.fr/images-buzz/cover/4595053658ef81b4c7bcb_Sans-titre-2.jpg");
-    opacity:0.8;
+    background-image: url("https://wallpapercave.com/wp/a9QC91O.jpg");
 }
 .nav-link{
-    color: fuchsia;
-    font-size: 25px;
-    margin-left: 150px;
+    color: darkslateblue;
+    font-size: 27px;
+    margin-left: 130px;
+    margin-bottom:15px;
 }
 /*end navbar*/
